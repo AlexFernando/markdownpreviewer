@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FormGroup from 'react-bootstrap/FormGroup';
+import FormLabel from 'react-bootstrap/FormLabel';
+import FormControl from 'react-bootstrap/FormControl';
 
 const marked = require('marked');
 
@@ -22,10 +25,10 @@ class App extends Component {
     return (
       <div className="container">
         <div>
-          <h1>Markdown Input</h1>
-          <form>
-            <textarea name="textarea" rows="10" cols="50" placeholder="Write something here" value= {markdownText} onChange = {(e) => this.updatingText(e.target.value)} ></textarea>
-          </form>
+          <FormGroup controlId="formControlisTextarea">
+            <FormLabel>Markdown Input</FormLabel>
+            <FormControl as="textarea" placeholder="Enter Markdown" value={markdownText} onChange = {(e) => this.updatingText(e.target.value)} > </FormControl>
+          </FormGroup>
         </div>
 
         <div>
