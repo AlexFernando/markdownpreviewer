@@ -22,21 +22,27 @@ class App extends Component {
     let {markdownText} = this.state;
     
     return (
-      <div className="container">
+      <div className="main">
+        <h1>Markdown Previewer</h1>
+        <h3>Try it!   Enjoy it!</h3>
+         <div className="container">
         <div className="input">
-          <FormGroup controlId="formControlisTextarea">
-            <h2>Markdown input</h2>
-            <FormControl as="textarea" rows="25" cols="38" placeholder="Enter Markdown" value={markdownText} onChange = {(e) => this.updatingText(e.target.value)} > </FormControl>
+          <FormGroup className="input-form" controlId="formControlisTextarea">
+            <h2>Editor</h2>
+            <FormControl className="input-styles"  as="textarea"  placeholder="Enter Markdown" value={markdownText} onChange = {(e) => this.updatingText(e.target.value)} > </FormControl>
           </FormGroup>
         </div>
 
         <div className="output">
-          <h2>Markdown Output</h2>
-          <div className="output-styles" rows="25" cols="38" dangerouslySetInnerHTML = {{ __html: marked(markdownText)}} >
-              
+          <h2 className="output-title">Preview</h2>
+          <div className="output-styles" dangerouslySetInnerHTML = {{ __html: marked(markdownText)}} >
+          
           </div>
         </div>
       </div>
+      </div>
+      
+     
     );
   }
 }

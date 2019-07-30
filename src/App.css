@@ -1,3 +1,14 @@
+.main h1 {
+  text-align: center;
+  color: white;
+}
+
+.main h3 {
+  text-align: center;
+  color: rgb(187, 134, 21);
+  word-spacing: .2rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -15,9 +26,36 @@
   margin-top: 3rem;
 }
 
+.input-styles {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  height: 370px;
+  width: 310px;
+
+  border-radius: 0 0 .4rem .4rem;
+}
+
+.input-styles::placeholder {
+  color: rgb(230, 219, 219);
+}
+
+.input-form {
+  background-color: rgb(206, 82, 68);
+  border-radius: .4rem;
+  
+}
+
+.input-form h2 {
+  font-size: 1.5rem;
+  padding: 1rem 0 0 1rem;
+  font-family: monospace;
+}
+
 .output-styles {
   font-family: monospace;
   border-color: rgb(169, 169, 169);
+  border-radius: 0 .4rem .4rem .4rem;
   background-color: white;
   -webkit-rtl-ordering: logical;
   flex-direction: column;
@@ -45,6 +83,18 @@
     width: 310px;
 } 
 
+.output-title {
+  font-family: monospace;
+  background-color: rgb(206, 82, 68);
+  border-radius: .4rem .4rem 0 0;
+  padding: 1rem;
+  border-color: rgb(169, 169, 169);
+  -webkit-rtl-ordering: logical;
+  border-width: 1px;
+  border-style: solid;
+  margin-bottom: 0;    
+}
+
 @media (min-width: 768px) {
   .container {
     display: flex;
@@ -55,9 +105,12 @@
 
 .output-styles {
  
-    height: 370px;
-    width: 480px;
+    height: 480px;
+    width: 520px;
 } 
 
-    
+.input-styles {
+  height: 480px;
+  width: 520px;
+}
 }
