@@ -15,4 +15,6 @@ code {
 html, body {
   overflow-x:hidden;
   width:100%;
+  background-color: rgb(75, 38, 110);
+  
 }
