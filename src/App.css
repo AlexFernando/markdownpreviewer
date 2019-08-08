@@ -1,9 +1,9 @@
-.main h1 {
+.main .title {
   text-align: center;
   color: white;
 }
 
-.main h3 {
+.main .subtitle {
   text-align: center;
   color: rgb(187, 134, 21);
   word-spacing: .2rem;
@@ -46,10 +46,18 @@
   
 }
 
+.headers_styles {
+  display: flex;
+}
+
 .input-form h2 {
   font-size: 1.5rem;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem 0 0 .5rem;
   font-family: monospace;
+}
+
+.icon_fcc {
+  padding: 1.8rem 0 0 1rem;
 }
 
 .output-styles {
@@ -61,29 +69,25 @@
   flex-direction: column;
   resize: auto;
   cursor: text;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
   border-width: 1px;
   border-style: solid;
   border-image: initial;
   padding: 2px;
   text-rendering: auto;
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    overflow: scroll;
-    height: 370px;
-    width: 310px;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  font: 400 13.3333px Arial;
+  overflow: scroll;
+  height: 370px;
+  width: 310px;
 } 
 
-.output-title {
+.headers-output {
+  display: flex;
   font-family: monospace;
   background-color: rgb(206, 82, 68);
   border-radius: .4rem .4rem 0 0;
@@ -92,9 +96,13 @@
   -webkit-rtl-ordering: logical;
   border-width: 1px;
   border-style: solid;
-  margin-bottom: 0;    
+  margin-bottom: 0;
+  padding: .6rem;    
 }
 
+.icon_fcc_2 {
+  padding: .8rem .5rem 0 0;
+}
 @media (min-width: 768px) {
   .container {
     display: flex;
@@ -114,3 +122,12 @@
   width: 520px;
 }
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table, tr, th, td {
+  border: 1px solid black;
+}
+
